@@ -167,7 +167,7 @@ $ git push -u origin master
 fatal: unable to access 'https://github.com/1999rebeca/EjercicioGit3.git/': Failed to connect to github.com port 443 after 21087 ms: Timed out
 ```
 
-Se fue el internet lol
+((Se fue el internet lol))
 
 ```
 a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3/Ejercicio git3 (master)
