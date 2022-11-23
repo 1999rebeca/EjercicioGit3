@@ -207,6 +207,7 @@ Tengo que cambiar la rama por defecto
 eliminada la rama main                ---->  ![main deleted](https://user-images.githubusercontent.com/114091264/203599781-fffe54c9-1b61-4f12-ac56-525638e67dfa.png)
 
 
+
 9. Modificamos el proyecto local (commit: "añadiendo código para probar las propiedades de Java")
 
 ![añado codigo al proyecto](https://user-images.githubusercontent.com/114091264/203600546-910ca67a-05b2-453a-95b7-6fb75d283274.png)
