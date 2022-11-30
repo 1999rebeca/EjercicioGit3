@@ -251,4 +251,70 @@ d1709a1 (origin/master) primer commit local
 
 ```
 
-10.
+10. Creamos una nueva rama para corregir un bug:
+Las especificaciones de nuestro programa nos impiden que una persona cambie de nombre.
+
+```
+a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3 (master)
+$ git checkout -b fixbug1
+Switched to a new branch 'fixbug1'
+
+a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3 (fixbug1)
+$
+```
+
+11. Corregimos este problem, commiteamos la corrección en la rama y la pusheamos.
+
+![intento de arreglo bug](https://user-images.githubusercontent.com/114091264/204846604-dd6c62b2-c995-4bb7-b6cb-258be6c6b15f.png)
+
+```
+a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3/Ejercicio git3 (fixbug1)
+$ git status
+On branch fixbug1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .idea/workspace.xml
+        new file:   src/Empleado.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   src/Empleado.java
+        modified:   src/Main.java
+
+
+a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3/Ejercicio git3 (fixbug1)
+$ git add .
+warning: in the working copy of '.idea/workspace.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/Main.java', LF will be replaced by CRLF the next time Git touches it
+
+a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3/Ejercicio git3 (fixbug1)
+$ git commit -m "bug corregido y testeado"
+[fixbug1 6087483] bug corregido y testeado
+ 3 files changed, 27 insertions(+), 5 deletions(-)
+ create mode 100644 src/Empleado.java
+
+```
+
+12. Mergeamos a master la rama con el bug ya solucionado
+
+```
+a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3/Ejercicio git3 (fixbug1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3/Ejercicio git3 (master)
+$ git merge fixbug1
+Updating 5034b47..6087483
+Fast-forward
+ .idea/workspace.xml |  8 ++++++++
+ src/Empleado.java   | 13 +++++++++++++
+ src/Main.java       | 11 ++++++-----
+ 3 files changed, 27 insertions(+), 5 deletions(-)
+ create mode 100644 src/Empleado.java
+
+```
+
+13. Completo este README y añado imágenes.
