@@ -210,7 +210,8 @@ eliminada la rama main                ---->  ![main deleted](https://user-images
 
 9. Modificamos el proyecto local (commit: "añadiendo código para probar las propiedades de Java")
 
-![añado codigo al proyecto](https://user-images.githubusercontent.com/114091264/203600546-910ca67a-05b2-453a-95b7-6fb75d283274.png)
+![añado codigo al proyecto](https://user-images.githubusercontent.com/114091264/204839737-b0ad8059-5c66-4dff-9b64-d5636bda0cdb.png)
+
 
 ```
 a22rebecabo@W10N-I9E07 MINGW64 ~/Documents/contornos/Ejercicio git3/Ejercicio git3 (master)
